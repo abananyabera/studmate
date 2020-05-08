@@ -1,0 +1,2 @@
+rootProject.name='online_student_master'
+include ':app'
