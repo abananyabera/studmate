@@ -10,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".topics.TopicsActivity"></activity>
-        <activity android:name=".subject.SubjectActivity" />
+        <activity android:name=".subject.SubjectActivity" >
+
+        </activity>
         <activity android:name=".links.LinksActivity" />
         <activity
             android:name=".SplashActivity"
