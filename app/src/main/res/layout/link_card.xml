@@ -8,15 +8,24 @@
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        >
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
             <TextView
+                android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@{Link.title}"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:text="@{Link.link}"
+                android:layout_marginTop="2dp"
                 />
         </RelativeLayout>
 

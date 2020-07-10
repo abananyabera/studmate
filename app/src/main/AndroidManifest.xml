@@ -13,15 +13,17 @@
         <activity android:name=".subject.SubjectActivity" >
 
         </activity>
-        <activity android:name=".links.LinksActivity" />
-        <activity
-            android:name=".SplashActivity"
-            android:theme="@style/SplashTheme">
+        <activity android:name=".links.LinksActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+
         </activity>
         <activity android:name=".MainActivity"
             android:theme="@style/SplashTheme"/>
