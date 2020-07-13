@@ -12,6 +12,10 @@ public class MainActivity extends AppCompatActivity {
     int sem;
     String stream;
     String CSE = "cse";
+    String IT ="it";
+    String EE ="ee";
+    String ECE ="ece";
+    String ME = "me";
     ActivityMainBinding activityMainBinding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +28,22 @@ public class MainActivity extends AppCompatActivity {
                 stream = CSE;
             }
         });
+        activityMainBinding.ee.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                stream = EE;
+            }
+        });
         activityMainBinding.first.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 sem = 1;
+            }
+        });
+        activityMainBinding.second.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sem =2;
             }
         });
     }
@@ -36,6 +52,133 @@ public class MainActivity extends AppCompatActivity {
             if (sem == 1){
                 //code for intent
             }
+            if (sem == 2){
+                //code for intent
+            }
+            if (sem == 3){
+                //code for intent
+            }
+            if (sem == 4){
+                //code for intent
+            }
+            if (sem == 5){
+                //code for intent
+            }
+            if (sem == 6){
+                //code for intent
+            }
+            if (sem == 7){
+                //code for intent
+            }
+            if (sem == 8){
+                //code for intent
+            }
         }
+        if (stream ==  IT){
+            if (sem == 1){
+                //code for intent
+            }
+            if (sem == 2){
+                //code for intent
+            }
+            if (sem == 3){
+                //code for intent
+            }
+            if (sem == 4){
+                //code for intent
+            }
+            if (sem == 5){
+                //code for intent
+            }
+            if (sem == 6){
+                //code for intent
+            }
+            if (sem == 7){
+                //code for intent
+            }
+            if (sem == 8){
+                //code for intent
+            }
+        }
+        if (stream ==  EE){
+            if (sem == 1){
+                //code for intent
+            }
+            if (sem == 2){
+                //code for intent
+            }
+            if (sem == 3){
+                //code for intent
+            }
+            if (sem == 4){
+                //code for intent
+            }
+            if (sem == 5){
+                //code for intent
+            }
+            if (sem == 6){
+                //code for intent
+            }
+            if (sem == 7){
+                //code for intent
+            }
+            if (sem == 8){
+                //code for intent
+            }
+        }
+        if (stream ==  ECE){
+            if (sem == 1){
+                //code for intent
+            }
+            if (sem == 2){
+                //code for intent
+            }
+            if (sem == 3){
+                //code for intent
+            }
+            if (sem == 4){
+                //code for intent
+            }
+            if (sem == 5){
+                //code for intent
+            }
+            if (sem == 6){
+                //code for intent
+            }
+            if (sem == 7){
+                //code for intent
+            }
+            if (sem == 8){
+                //code for intent
+            }
+        }
+        if (stream ==  ME){
+            if (sem == 1){
+                //code for intent
+            }
+            if (sem == 2){
+                //code for intent
+            }
+            if (sem == 3){
+                //code for intent
+            }
+            if (sem == 4){
+                //code for intent
+            }
+            if (sem == 5){
+                //code for intent
+            }
+            if (sem == 6){
+                //code for intent
+            }
+            if (sem == 7){
+                //code for intent
+            }
+            if (sem == 8){
+                //code for intent
+            }
+        }
+
+
     }
 }

@@ -57,6 +57,7 @@
                     android:text="CSE" />
 
                 <com.google.android.material.chip.Chip
+                    android:id="@+id/me"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -64,6 +65,7 @@
                     android:text="ME" />
 
                 <com.google.android.material.chip.Chip
+                    android:id="@+id/ee"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -71,13 +73,15 @@
                     android:textAlignment="center" />
 
                 <com.google.android.material.chip.Chip
+                    android:id="@+id/it"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CSE"
+                    android:text="IT"
                     android:textAlignment="center" />
 
                 <com.google.android.material.chip.Chip
+                    android:id="@+id/ece"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -87,7 +91,7 @@
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CSE" />
+                    android:text="ME" />
 
                 <com.google.android.material.chip.Chip
                     style="@style/Widget.MaterialComponents.Chip.Choice"
@@ -134,6 +138,7 @@
                     android:text="1st" />
 
                 <com.google.android.material.chip.Chip
+                    android:id="@+id/second"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -141,6 +146,7 @@
                     android:text="2nd" />
 
                 <com.google.android.material.chip.Chip
+                    android:id="@+id/third"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -148,6 +154,7 @@
                     android:textAlignment="center" />
 
                 <com.google.android.material.chip.Chip
+                    android:id="@+id/fourth"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -155,24 +162,28 @@
                     android:textAlignment="center" />
 
                 <com.google.android.material.chip.Chip
+                    android:id="@+id/fifth"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5th" />
 
                 <com.google.android.material.chip.Chip
+                    android:id="@+id/sixth"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="6th" />
 
                 <com.google.android.material.chip.Chip
+                    android:id="@+id/seventh"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="7th" />
 
                 <com.google.android.material.chip.Chip
+                    android:id="@+id/eighth"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
