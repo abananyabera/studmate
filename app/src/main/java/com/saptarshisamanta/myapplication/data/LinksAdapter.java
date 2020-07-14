@@ -16,7 +16,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LinksAdapter extends RecyclerView.Adapter<LinksAdapter.linkHolder> {
-    List<Links> linksList = new ArrayList<>();
+    List<Links> linksList;
+    public OnItemClickedListener onItemClickedListener;
+
+    public void setOnItemClickedListener(OnItemClickedListener onItemClickedListener) {
+        this.onItemClickedListener = onItemClickedListener;
+    }
+
+    public interface OnItemClickedListener{
+        void OnItemClicked(int position);
+    }
     public LinksAdapter(ArrayList<Links> list) {
         linksList = list;
     }
@@ -26,7 +35,7 @@ public class LinksAdapter extends RecyclerView.Adapter<LinksAdapter.linkHolder> 
     public linkHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LinkCardBinding linkCardBinding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.link_card,parent,false);
 
-        return new linkHolder(linkCardBinding);
+        return new linkHolder(linkCardBinding,onItemClickedListener);
     }
 
     @Override
@@ -42,9 +51,15 @@ public class LinksAdapter extends RecyclerView.Adapter<LinksAdapter.linkHolder> 
 
     public static class linkHolder extends  RecyclerView.ViewHolder {
         LinkCardBinding linkCardBinding;
-        public linkHolder(@NonNull LinkCardBinding itemView) {
+        public linkHolder(@NonNull LinkCardBinding itemView, final OnItemClickedListener onItemClickedListener) {
             super(itemView.getRoot());
             linkCardBinding = itemView;
+            itemView.getRoot().setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    onItemClickedListener.OnItemClicked(getAdapterPosition());
+                }
+            });
         }
     }
 }

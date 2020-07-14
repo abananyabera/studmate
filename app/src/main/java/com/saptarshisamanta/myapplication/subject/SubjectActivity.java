@@ -37,6 +37,13 @@ public class SubjectActivity extends AppCompatActivity {
         detailsAdapter = new DetailsAdapter(this,list);
         activitySubjectBinding.subjectList.setLayoutManager(new GridLayoutManager(this,2));
         activitySubjectBinding.subjectList.setAdapter(detailsAdapter);
+        detailsAdapter.setOnItemClickListener(new DetailsAdapter.OnItemClickedListener() {
+            @Override
+            public void oItemClicked(int position) {
+                String topic = list.get(position).title;
+                //intent to links activity
+            }
+        });
 
     }
 }
