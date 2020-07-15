@@ -1,15 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
-        <item android:title="Nav Menu">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-            <menu>
-                <item android:id="@+id/test"
-                    android:title="test"
-                    android:icon="@mipmap/ic_launcher_round"/>
-            </menu>
+    <item android:title="@string/general">
+        <menu>
+            <item
+                android:id="@+id/Home"
+                android:icon="@drawable/ic_baseline_home_24"
+                android:title="Home" />
+            <item
+                android:id="@+id/wiki"
+                android:title="Wikipedia"
+                android:icon="@drawable/ic_baseline_public_24"/>
+            <item
+                android:id="@+id/wikibook"
+                android:title="WikiBooks"
+                android:icon="@drawable/ic_baseline_menu_book_24"/>
+            <item
+                android:id="@+id/youtube"
+                android:title="Youtube"
+                android:icon="@drawable/ic_baseline_youtube_searched_for_24"/>
 
-        </item>
-    </group>
+        </menu>
+    </item>
 
+
+    <item android:title="Communication">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:title="Share" />
+            <item
+                android:id="@+id/about"
+                android:title="About"
+                android:icon="@drawable/ic_baseline_note_24"/>
+        </menu>
+    </item>
+
+    <item android:title="Thanks_Visit_Again">
+        <menu>
+            <item
+                android:id="@+id/exit"
+                android:icon="@drawable/ic_baseline_exit_to_app_24"
+                android:title="Exit" />
+
+        </menu>
+    </item>
 </menu>
