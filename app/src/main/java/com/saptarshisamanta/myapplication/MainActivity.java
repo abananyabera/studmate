@@ -3,6 +3,9 @@ package com.saptarshisamanta.myapplication;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -20,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     ActionBarDrawerToggle actionBarDrawerToggle;
     Toolbar toolbar;
     NavigationView navigationView;
+    private WebView webView;
 
     int sem;
     String stream;
@@ -38,10 +42,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView=findViewById(R.id.navigationView);
         navigationView.setNavigationItemSelectedListener(this);
 
+
         actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.open,R.string.close);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.setDrawerIndicatorEnabled(true);
         actionBarDrawerToggle.syncState();
+
 
 
 
@@ -210,6 +216,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if(item.getItemId()==R.id.exit){
             System.exit(0);
         }
+        else if(item.getItemId()==R.id.wiki){
+            webView.loadUrl("https://www.wikipedia.org/");
+        }
+        else if(item.getItemId()==R.id.wikibook){
+            webView.loadUrl("https://www.wikibooks.org/");
+        }
+
         return true;
     }
 }
